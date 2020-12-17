@@ -1,11 +1,13 @@
-var vm = new Vue({
+new Vue({
     el: '#app',
     data: {
-        title:'maka maka'
+        title: '`ello',
+        link :'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO'
     },
     methods: {
-        changeTitle: function(event){
-            this.title = event.target.value;
+        sayHello :function(){
+            this.title = 'maka maka';
+            return this.title;
         }
     }
 });
