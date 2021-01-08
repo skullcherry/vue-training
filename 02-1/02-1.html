@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script src="vue.js"></script>
+    <div id="app">
+        <button v-on:click="increase(2, $event)">butt</button>
+        <button v-on:click="counter++">butt</button>
+
+        <p>{{ counter * 2 > 10 ? 'Greater than 10' : 'Smaller than 10'}}</p>
+        <p v-on:mousemove="updateCoord">
+            Coordinates: {{ x }} {{ y }}
+        - <span v-on:mousemove.stop="">DEAD SPOT</span>  
+        </p>
+
+        <input type="text" v-on:keyup.enter.space="alertMe">
+        
+
+    </div>
+
+    <script src="02-1.js"></script>
+    
+</body>
+</html>
