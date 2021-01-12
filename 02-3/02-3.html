@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="02-3.css">
+    <div id="app">
+        <div 
+        class="demo" 
+        @click="attachRed = !attachRed"
+        :class="divClasses"> </div>
+        <div class="demo" :class="{red: attachRed}"> </div>
+        <div class="demo" :class="[{red: attachRed} , color]"> </div>
+        <hr>
+        <input type="text" v-model="color">
+
+    </div>
+
+    <script src="02-3.js"></script>
+    
+</body>
+</html>
+
+
