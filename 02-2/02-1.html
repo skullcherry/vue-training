@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script src="vue.js"></script>
+    <div id="app">
+        <button v-on:click="counter++">Inc</button>
+        <button v-on:click="counter--">Dick</button>
+        <button v-on:click="secondCounter++">SEC</button>
+
+
+        <p>Counter : {{ counter }} | {{ secondCounter }}</p>
+        <p>Result : {{ result() }} | {{ output }}</p>
+
+        
+    </div>
+
+    <script src="02-2.js"></script>
+    
+</body>
+</html>
+
